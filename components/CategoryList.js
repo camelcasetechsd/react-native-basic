@@ -3,20 +3,14 @@ import { Text, View, StyleSheet, Image, ScrollView } from 'react-native'
 import { createStackNavigator } from 'react-navigation';
 
 import Category from './Category.js'
-
+import CategoriesData from './json/categories.json' ;
 
 
 class CategoryList extends Component {
-   state = {
-      names: this.buildExampleCategoryList()
-   }
 
-   buildExampleCategoryList() {
-   	  categories = [];
-   	  for (counter=0; counter<31; counter++) {
-   	  	categories.push({id: counter, name: 'Category' + counter})
-   	  }
-   	  return categories;
+
+   state = {
+      names: CategoriesData
    }
 
    categoryGrouping(categories) {
@@ -36,10 +30,10 @@ class CategoryList extends Component {
    categoryGroupsRenderer(category) {
    		if (category != undefined) {
    			return  (<Category
-	            	uri={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+	            	uri={{uri: category.image}}
 	            	imagestyle={styles.image}
 	            	textstyle={styles.text}
-	            	name={category.name}
+	            	category={category}
 	            	navigation={this.props.navigation}
 	              />
 	            );
@@ -77,16 +71,16 @@ const styles = StyleSheet.create ({
       padding: 30,
       marginTop: 3,
       backgroundColor: '#d9f9b1',
-      alignItems: 'center',
+      alignItems: 'flex-start',
       flexDirection: 'row',
-      justifyContent: 'space-between',
+      justifyContent: 'space-around',
    },
    text: {
       color: '#4f603c',
       textAlign: 'center'
    },
    image: {
-   	  width: 50,
-   	  height: 50
+   	  width: 85,
+   	  height: 85
    }
 })

@@ -7,6 +7,10 @@ import CompanyList from './CompanyList.js'
 import CompanyDetails from './CompanyDetails.js'
 
 class Home extends React.Component {
+	static navigationOptions = {
+    	title: 'Home',
+  	};
+
 	render() {
 	   return (
 	   	  <View>

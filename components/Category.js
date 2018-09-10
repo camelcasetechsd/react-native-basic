@@ -7,17 +7,17 @@ import { createStackNavigator } from 'react-navigation';
 class Category extends Component {
 
    GoToCompanyList = () => {
-      this.props.navigation.navigate('CompanyList')
+      this.props.navigation.navigate('CompanyList', { categoryId: this.props.category.id})
    }
 
    render() {
       return (
-         <TouchableOpacity onPress={() => this.GoToCompanyList({})}>
+         <TouchableOpacity style={{width:85, height:120}} onPress={() => this.GoToCompanyList({})}>
 			 <Image source={this.props.uri}
 			   style={this.props.imagestyle}
 			   />
              <Text style={this.props.textstyle} >
-                {this.props.name}
+                {this.props.category.name}
              </Text>
          </TouchableOpacity>
       )

@@ -3,14 +3,16 @@ import { Text, View, StyleSheet, Image, ScrollView } from 'react-native'
 import { createStackNavigator } from 'react-navigation';
 
 import Company from './Company.js'
+import CompaniesData from './json/companies.json' ;
 
 
 
 class CompanyList extends Component {
    state = {
-      names: this.buildExampleCompanyList()
+      names: CompaniesData
    }
 
+   //to be removed after using dynamic json data
    buildExampleCompanyList() {
    	  companies = [];
    	  for (counter=0; counter<31; counter++) {

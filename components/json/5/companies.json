@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "name": "cillum consectetur",
+    "image": "http://placehold.it/100x100",
+    "latitude": -51.996977,
+    "longitude": -20.682424,
+    "phone": "+1 (849) 448-3478",
+    "website": "http://cillum.com"
+  },
+  {
+    "id": 1,
+    "name": "sit in",
+    "image": "http://placehold.it/100x100",
+    "latitude": -53.204955,
+    "longitude": 59.430012,
+    "phone": "+1 (831) 458-3597",
+    "website": "http://nisi.com"
+  },
+  {
+    "id": 2,
+    "name": "esse occaecat",
+    "image": "http://placehold.it/100x100",
+    "latitude": 12.708441,
+    "longitude": 172.230461,
+    "phone": "+1 (920) 562-2385",
+    "website": "http://eu.com"
+  },
+  {
+    "id": 3,
+    "name": "proident esse",
+    "image": "http://placehold.it/100x100",
+    "latitude": -73.682847,
+    "longitude": -58.58401,
+    "phone": "+1 (851) 437-2668",
+    "website": "http://veniam.com"
+  },
+  {
+    "id": 4,
+    "name": "reprehenderit in",
+    "image": "http://placehold.it/100x100",
+    "latitude": -20.644141,
+    "longitude": 73.100033,
+    "phone": "+1 (856) 480-3728",
+    "website": "http://et.com"
+  },
+  {
+    "id": 5,
+    "name": "non sit",
+    "image": "http://placehold.it/100x100",
+    "latitude": 49.899831,
+    "longitude": 87.495443,
+    "phone": "+1 (944) 589-3598",
+    "website": "http://velit.com"
+  }
+]

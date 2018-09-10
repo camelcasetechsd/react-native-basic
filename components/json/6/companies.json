@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "name": "proident eiusmod",
+    "image": "http://placehold.it/100x100",
+    "latitude": -24.196185,
+    "longitude": -92.848506,
+    "phone": "+1 (839) 551-2556",
+    "website": "http://tempor.com"
+  },
+  {
+    "id": 1,
+    "name": "adipisicing dolor",
+    "image": "http://placehold.it/100x100",
+    "latitude": -80.124652,
+    "longitude": -102.999774,
+    "phone": "+1 (860) 528-3739",
+    "website": "http://dolor.com"
+  },
+  {
+    "id": 2,
+    "name": "tempor magna",
+    "image": "http://placehold.it/100x100",
+    "latitude": 3.981964,
+    "longitude": -15.392128,
+    "phone": "+1 (881) 430-2526",
+    "website": "http://pariatur.com"
+  }
+]

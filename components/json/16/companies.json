@@ -1,0 +1,47 @@
+[
+  {
+    "id": 0,
+    "name": "eiusmod duis",
+    "image": "http://placehold.it/100x100",
+    "latitude": -64.71109,
+    "longitude": 116.921867,
+    "phone": "+1 (837) 445-3170",
+    "website": "http://do.com"
+  },
+  {
+    "id": 1,
+    "name": "non consectetur",
+    "image": "http://placehold.it/100x100",
+    "latitude": -20.817249,
+    "longitude": -18.522788,
+    "phone": "+1 (997) 456-3360",
+    "website": "http://aliquip.com"
+  },
+  {
+    "id": 2,
+    "name": "eiusmod et",
+    "image": "http://placehold.it/100x100",
+    "latitude": -26.204405,
+    "longitude": -120.157554,
+    "phone": "+1 (825) 525-3803",
+    "website": "http://fugiat.com"
+  },
+  {
+    "id": 3,
+    "name": "dolore ea",
+    "image": "http://placehold.it/100x100",
+    "latitude": -50.421535,
+    "longitude": -104.35707,
+    "phone": "+1 (999) 455-2290",
+    "website": "http://elit.com"
+  },
+  {
+    "id": 4,
+    "name": "ad reprehenderit",
+    "image": "http://placehold.it/100x100",
+    "latitude": 36.198425,
+    "longitude": -38.858017,
+    "phone": "+1 (971) 474-3989",
+    "website": "http://aliquip.com"
+  }
+]

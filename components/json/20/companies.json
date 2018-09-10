@@ -1,0 +1,74 @@
+[
+  {
+    "id": 0,
+    "name": "consectetur veniam",
+    "image": "http://placehold.it/100x100",
+    "latitude": -38.16342,
+    "longitude": 165.629106,
+    "phone": "+1 (829) 507-3973",
+    "website": "http://deserunt.com"
+  },
+  {
+    "id": 1,
+    "name": "minim culpa",
+    "image": "http://placehold.it/100x100",
+    "latitude": -70.248999,
+    "longitude": 61.285376,
+    "phone": "+1 (918) 452-2581",
+    "website": "http://sint.com"
+  },
+  {
+    "id": 2,
+    "name": "ipsum dolore",
+    "image": "http://placehold.it/100x100",
+    "latitude": 7.414513,
+    "longitude": 121.149821,
+    "phone": "+1 (918) 415-3137",
+    "website": "http://velit.com"
+  },
+  {
+    "id": 3,
+    "name": "nostrud proident",
+    "image": "http://placehold.it/100x100",
+    "latitude": -6.364665,
+    "longitude": 51.583437,
+    "phone": "+1 (935) 529-2392",
+    "website": "http://aliquip.com"
+  },
+  {
+    "id": 4,
+    "name": "non commodo",
+    "image": "http://placehold.it/100x100",
+    "latitude": -42.426581,
+    "longitude": 66.399674,
+    "phone": "+1 (833) 422-2351",
+    "website": "http://laboris.com"
+  },
+  {
+    "id": 5,
+    "name": "eiusmod consectetur",
+    "image": "http://placehold.it/100x100",
+    "latitude": 1.346528,
+    "longitude": -120.769565,
+    "phone": "+1 (918) 409-2350",
+    "website": "http://veniam.com"
+  },
+  {
+    "id": 6,
+    "name": "id qui",
+    "image": "http://placehold.it/100x100",
+    "latitude": 63.743101,
+    "longitude": -167.040726,
+    "phone": "+1 (864) 595-2880",
+    "website": "http://nulla.com"
+  },
+  {
+    "id": 7,
+    "name": "veniam esse",
+    "image": "http://placehold.it/100x100",
+    "latitude": -31.484171,
+    "longitude": -127.859138,
+    "phone": "+1 (813) 547-3700",
+    "website": "http://labore.com"
+  }
+]

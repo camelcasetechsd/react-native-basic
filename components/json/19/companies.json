@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "name": "incididunt do",
+    "image": "http://placehold.it/100x100",
+    "latitude": 86.037311,
+    "longitude": 65.079098,
+    "phone": "+1 (877) 417-3826",
+    "website": "http://voluptate.com"
+  },
+  {
+    "id": 1,
+    "name": "eu deserunt",
+    "image": "http://placehold.it/100x100",
+    "latitude": -6.009398,
+    "longitude": -27.119503,
+    "phone": "+1 (804) 579-2533",
+    "website": "http://Lorem.com"
+  },
+  {
+    "id": 2,
+    "name": "amet deserunt",
+    "image": "http://placehold.it/100x100",
+    "latitude": 26.612908,
+    "longitude": 54.667082,
+    "phone": "+1 (874) 504-2708",
+    "website": "http://non.com"
+  },
+  {
+    "id": 3,
+    "name": "sunt nulla",
+    "image": "http://placehold.it/100x100",
+    "latitude": 56.942956,
+    "longitude": -31.067393,
+    "phone": "+1 (964) 404-3737",
+    "website": "http://reprehenderit.com"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 0,
+    "name": "occaecat exercitation",
+    "image": "http://placehold.it/100x100",
+    "latitude": 75.808726,
+    "longitude": 59.8199,
+    "phone": "+1 (846) 554-3660",
+    "website": "http://tempor.com"
+  },
+  {
+    "id": 1,
+    "name": "nisi incididunt",
+    "image": "http://placehold.it/100x100",
+    "latitude": 89.242819,
+    "longitude": 176.243126,
+    "phone": "+1 (878) 556-3026",
+    "website": "http://aliqua.com"
+  },
+  {
+    "id": 2,
+    "name": "commodo aliquip",
+    "image": "http://placehold.it/100x100",
+    "latitude": 54.392632,
+    "longitude": 74.083427,
+    "phone": "+1 (827) 488-3402",
+    "website": "http://dolore.com"
+  },
+  {
+    "id": 3,
+    "name": "duis duis",
+    "image": "http://placehold.it/100x100",
+    "latitude": 29.24821,
+    "longitude": -77.480569,
+    "phone": "+1 (886) 491-2574",
+    "website": "http://occaecat.com"
+  },
+  {
+    "id": 4,
+    "name": "minim sint",
+    "image": "http://placehold.it/100x100",
+    "latitude": -63.886059,
+    "longitude": -142.23522,
+    "phone": "+1 (807) 447-3192",
+    "website": "http://Lorem.com"
+  }
+]

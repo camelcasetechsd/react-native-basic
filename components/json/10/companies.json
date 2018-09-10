@@ -1,0 +1,65 @@
+[
+  {
+    "id": 0,
+    "name": "consectetur aliquip",
+    "image": "http://placehold.it/100x100",
+    "latitude": -58.214347,
+    "longitude": 0.331751,
+    "phone": "+1 (892) 517-3464",
+    "website": "http://tempor.com"
+  },
+  {
+    "id": 1,
+    "name": "Lorem aliqua",
+    "image": "http://placehold.it/100x100",
+    "latitude": -80.48793,
+    "longitude": 73.648168,
+    "phone": "+1 (903) 549-2595",
+    "website": "http://tempor.com"
+  },
+  {
+    "id": 2,
+    "name": "velit excepteur",
+    "image": "http://placehold.it/100x100",
+    "latitude": 60.616966,
+    "longitude": 139.182809,
+    "phone": "+1 (977) 495-3244",
+    "website": "http://sint.com"
+  },
+  {
+    "id": 3,
+    "name": "commodo incididunt",
+    "image": "http://placehold.it/100x100",
+    "latitude": -55.533142,
+    "longitude": -110.844996,
+    "phone": "+1 (922) 517-2769",
+    "website": "http://voluptate.com"
+  },
+  {
+    "id": 4,
+    "name": "consequat eiusmod",
+    "image": "http://placehold.it/100x100",
+    "latitude": 19.519925,
+    "longitude": 116.45244,
+    "phone": "+1 (968) 518-2618",
+    "website": "http://aliqua.com"
+  },
+  {
+    "id": 5,
+    "name": "aute aute",
+    "image": "http://placehold.it/100x100",
+    "latitude": 32.564988,
+    "longitude": 71.879494,
+    "phone": "+1 (945) 595-3806",
+    "website": "http://laboris.com"
+  },
+  {
+    "id": 6,
+    "name": "aliquip reprehenderit",
+    "image": "http://placehold.it/100x100",
+    "latitude": 35.977234,
+    "longitude": -59.276198,
+    "phone": "+1 (843) 452-2459",
+    "website": "http://quis.com"
+  }
+]

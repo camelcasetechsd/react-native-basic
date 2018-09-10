@@ -21,20 +21,3 @@ class Home extends React.Component {
 	}
 }
 export default Home
-
-/*
-   	  <View>
-   	  	<ScrollView>
-	   	  <Image source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
-		   style={{width:'100%', height:200}}
-		  />
-	      <CompanyList />
-	  	</ScrollView>
-	  </View>
-*/
-
-/*
-   	  <View>
-   	  	<CompanyDetails />
-	  </View>
-*/

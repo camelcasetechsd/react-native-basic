@@ -34,6 +34,7 @@ class CompanyList extends Component {
                         <Company
                             uri={{uri: item.image}}
                             name={item.name}
+                            company={item}
                             navigation={this.props.navigation}
                             key={item.id}
                         />

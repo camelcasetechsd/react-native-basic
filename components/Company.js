@@ -4,7 +4,7 @@ import {Text, Image, TouchableOpacity, StyleSheet} from 'react-native'
 class Company extends Component {
 
    GoToDetails = () => {
-      this.props.navigation.navigate('CompanyDetails')
+      this.props.navigation.navigate('CompanyDetails',{ company: this.props.company})
    }
 
    render() {

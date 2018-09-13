@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, ScrollView, Image } from 'react-native'
+import { Text, StyleSheet, ScrollView} from 'react-native'
 import ImageSlider from 'react-native-image-slider';
-import CompaniesData from './json/companies.json' ;
-
 
 class CompanyDetails extends Component {
 
@@ -18,15 +16,17 @@ class CompanyDetails extends Component {
    }
 
    render() {
+       const {navigation} = this.props;
+       const company = navigation.getParam('company', 'NO-COMPANY');
       return (
-       <ScrollView style={companystyles.container}>
-	        <ImageSlider style={companystyles.imageslider} images={this.state.images}/>
+       <ScrollView style={styles.container}>
+	        <ImageSlider style={styles.imageslider} images={this.state.images}/>
 	        <ScrollView>
-		         <Text style={{color: '#4f603c', textAlign: 'center'}} >
-		            {this.state.name}
+		         <Text style={{color: 'green', textAlign:'center', fontSize: 24, marginTop: 10}} >
+		            {company.name.toUpperCase()}
 		         </Text>
-		         <Text style={companystyles.text} >
-		            {this.state.description}
+		         <Text style={styles.text} >
+		            {company.description}
 		         </Text>
 	        </ScrollView>
        </ScrollView>
@@ -36,7 +36,7 @@ class CompanyDetails extends Component {
 
 export default CompanyDetails
 
-const companystyles = StyleSheet.create ({
+const styles = StyleSheet.create ({
    container: {
       flexDirection: 'column',
    },
@@ -49,11 +49,12 @@ const companystyles = StyleSheet.create ({
    },
    text: {
       color: '#4f603c',
-      textAlign: 'center'
+      textAlign: 'justify',
+       padding: 5,
    },
    imageslider: {
    	  width: '100%',
    	  height: 250,
-   	  flex: 0
+   	  flex: 0,
    }
 })

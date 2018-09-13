@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Text, View, StyleSheet, Image, ScrollView} from 'react-native'
+import {Text, View, StyleSheet, Image, SectionList, ScrollView} from 'react-native'
 import {createStackNavigator} from 'react-navigation';
 
 import Company from './Company.js'
@@ -31,6 +31,7 @@ class CompanyList extends Component {
                     textstyle={cstyles.text}
                     name={company.name}
                     navigation={this.props.navigation}
+                    key={company.id}
                 />
             );
         }
@@ -45,18 +46,17 @@ class CompanyList extends Component {
         const categoryId = navigation.getParam('categoryId', 'NO-ID');
         const companiesData = this.companyGrouping(this.state.names, categoryId);
         return (
-            <View style={{flexDirection: 'row', flex: 1}}>
-                {
+            <ScrollView>
+                <View style={cstyles.container}>
+                    {
                     companiesData.map((item, index) => (
-                        <View
-                            style={cstyles.container}
-                            key={item.id}
-                        >
+                        <View key={item.id} style={cstyles.card}>
                             {this.companyGroupsRenderer(item)}
                         </View>
                     ))
-                }
-            </View>
+                    }
+                </View>
+            </ScrollView>
         )
     }
 }
@@ -65,14 +65,23 @@ export default CompanyList
 
 const cstyles = StyleSheet.create({
     container: {
-        flexDirection: 'column',
-        padding: 30,
-        marginTop: 3,
+        flex: 1,
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+    },
+    card: {
+        padding: 5,
+        marginTop: 5,
+        marginRight: 7,
         backgroundColor: '#d9f9b1',
     },
     text: {
+        width: 100,
         color: '#4f603c',
-        textAlign: 'center'
+        textAlign: 'center',
+        flex: 1,
+        flexWrap: 'wrap',
     },
     image: {
         width: 100,

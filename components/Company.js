@@ -12,14 +12,14 @@ class Company extends Component {
 
    render() {
       return (
-          <TouchableOpacity onPress={() => this.GoToDetails({})}>
+          <View onPress={() => this.GoToDetails({})}>
     			   <Image source={this.props.uri}
     			     style={this.props.imagestyle}
     			   />
              <Text style={this.props.textstyle} >
                 {this.props.name}
              </Text>
-          </TouchableOpacity>
+          </View>
       )
    }
 }

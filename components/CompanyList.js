@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-import {Text, View, StyleSheet, Image, SectionList, ScrollView} from 'react-native'
-import {createStackNavigator} from 'react-navigation';
-
+import {View, StyleSheet, ScrollView} from 'react-native'
 import Company from './Company.js'
 import CompaniesData from './json/companies.json' ;
 

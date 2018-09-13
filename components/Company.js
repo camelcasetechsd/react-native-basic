@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Text, View, Image, TouchableOpacity, StyleSheet} from 'react-native'
+import {Text, Image, TouchableOpacity, StyleSheet} from 'react-native'
 
 class Company extends Component {
 

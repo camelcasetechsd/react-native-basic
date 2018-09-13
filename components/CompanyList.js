@@ -23,23 +23,6 @@ class CompanyList extends Component {
         return companyGroups;
     }
 
-    companyGroupsRenderer(company) {
-        if (company != undefined) {
-            return (<Company
-                    uri={{uri: company.image}}
-                    imagestyle={cstyles.image}
-                    textstyle={cstyles.text}
-                    name={company.name}
-                    navigation={this.props.navigation}
-                    key={company.id}
-                />
-            );
-        }
-
-        return null;
-
-    }
-
     render() {
         /* 2. Get the param, provide a fallback value if not available */
         const {navigation} = this.props;
@@ -50,9 +33,12 @@ class CompanyList extends Component {
                 <View style={cstyles.container}>
                     {
                     companiesData.map((item, index) => (
-                        <View key={item.id} style={cstyles.card}>
-                            {this.companyGroupsRenderer(item)}
-                        </View>
+                        <Company
+                            uri={{uri: item.image}}
+                            name={item.name}
+                            navigation={this.props.navigation}
+                            key={item.id}
+                        />
                     ))
                     }
                 </View>
@@ -65,26 +51,8 @@ export default CompanyList
 
 const cstyles = StyleSheet.create({
     container: {
-        flex: 1,
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'center',
     },
-    card: {
-        padding: 5,
-        marginTop: 5,
-        marginRight: 7,
-        backgroundColor: '#d9f9b1',
-    },
-    text: {
-        width: 100,
-        color: '#4f603c',
-        textAlign: 'center',
-        flex: 1,
-        flexWrap: 'wrap',
-    },
-    image: {
-        width: 100,
-        height: 100
-    }
 })

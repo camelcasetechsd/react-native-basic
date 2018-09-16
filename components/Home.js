@@ -1,27 +1,35 @@
 import React from 'react'
-import { View, ScrollView, Image } from 'react-native'
-import { createStackNavigator } from 'react-navigation';
+import {View, ScrollView, Image, Button} from 'react-native'
+import {createStackNavigator} from 'react-navigation';
 
 import CategoryList from './CategoryList.js'
 import CompanyList from './CompanyList.js'
 import CompanyDetails from './CompanyDetails.js'
+import MenuBar from './MenuBar.js'
 
 class Home extends React.Component {
-	static navigationOptions = {
-    	title: 'Home',
-  	};
 
-	render() {
-	   return (
-	   	  <View>
-	   	  	<ScrollView>
-		   	  <Image source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
-			   style={{width:'100%', height:200}}
-			  />
-		      <CategoryList navigation={this.props.navigation}/>
-		  	</ScrollView>
-		  </View>
-	   );
-	}
+    static navigationOptions = ({navigation}) => {
+        const params = navigation.state.params || {};
+
+        return {
+            headerTitle: "Home",
+            headerRight: <MenuBar/>,
+        };
+    }
+
+    render() {
+        return (
+            <View>
+                <ScrollView>
+                    <Image source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                           style={{width: '100%', height: 200}}
+                    />
+                    <CategoryList navigation={this.props.navigation}/>
+                </ScrollView>
+            </View>
+        );
+    }
 }
+
 export default Home

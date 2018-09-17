@@ -17,6 +17,9 @@ const RootStack = createStackNavigator(
         CompanyDetails: CompanyDetailsScreen,
     },
     {
+        headerMode: 'float',
+        mode: 'card',
+        headerLayoutPreset: 'center',
         initialRouteName: 'Main',
         navigationOptions: {
             headerRight: <MenuBar/>,

@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, ScrollView, Image, Button} from 'react-native'
+import {View, ScrollView, Image} from 'react-native'
 import CategoryList from './CategoryList.js'
 
 class HomeScreen extends React.Component {

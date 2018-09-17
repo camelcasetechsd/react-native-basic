@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import {AppRegistry} from 'react-native';
 import {
     createStackNavigator,
+    createDrawerNavigator
 } from 'react-navigation';
 
 import HomeScreen from './components/HomeScreen.js'
 import CompanyListScreen from './components/CompanyListScreen.js'
 import CompanyDetailsScreen from './components/CompanyDetailsScreen.js'
 import MenuBar from './components/MenuBar'
-
 
 const RootStack = createStackNavigator(
     {
@@ -33,10 +33,16 @@ const RootStack = createStackNavigator(
     },
 );
 
+const MyApp = createDrawerNavigator({
+    Home: {
+        screen: HomeScreen,
+    }
+})
+
 class reactTutorialApp extends Component {
     render() {
         return (
-            <RootStack/>
+            <MyApp/>
         );
     }
 }

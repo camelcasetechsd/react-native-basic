@@ -7,6 +7,7 @@ import {
 import HomeScreen from './components/HomeScreen.js'
 import CompanyListScreen from './components/CompanyListScreen.js'
 import CompanyDetailsScreen from './components/CompanyDetailsScreen.js'
+import MenuBar from './components/MenuBar'
 
 
 const RootStack = createStackNavigator(
@@ -17,17 +18,21 @@ const RootStack = createStackNavigator(
     },
     {
         initialRouteName: 'Main',
-    }
+        navigationOptions: {
+            headerRight: <MenuBar/>,
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                fontWeight: 'bold',
+                textAlign: 'center',
+            },
+        }
+    },
 );
 
 class reactTutorialApp extends Component {
-    static navigationOptions = ({navigation}) => {
-        return {
-            headerTitle: "Home",
-            headerRight: <MenuBar/>,
-        };
-    }
-
     render() {
         return (
             <RootStack/>

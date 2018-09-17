@@ -1,11 +1,6 @@
 import React from 'react'
 import {View, ScrollView, Image, Button} from 'react-native'
-import {createStackNavigator} from 'react-navigation';
-
 import CategoryList from './CategoryList.js'
-import CompanyListScreen from './CompanyListScreen.js'
-import CompanyDetailsScreen from './CompanyDetailsScreen.js'
-import MenuBar from './MenuBar.js'
 
 class HomeScreen extends React.Component {
 
@@ -14,15 +9,6 @@ class HomeScreen extends React.Component {
 
         return {
             headerTitle: "Home",
-            headerRight: <MenuBar/>,
-            headerStyle: {
-                backgroundColor: '#f4511e',
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-                fontWeight: 'bold',
-                textAlign: 'center',
-            },
         };
     }
 

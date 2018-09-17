@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {Text, StyleSheet, ScrollView} from 'react-native'
 import ImageSlider from 'react-native-image-slider'
-import MenuBar from './MenuBar.js'
 
 class CompanyDetailsScreen extends Component {
 
@@ -9,15 +8,6 @@ class CompanyDetailsScreen extends Component {
         const company = navigation.getParam('company', 'NO-COMPANY');
         return {
             headerTitle: company.name.toUpperCase(),
-            headerRight: <MenuBar/>,
-            headerStyle: {
-                backgroundColor: '#f4511e',
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-                fontWeight: 'bold',
-                textAlign: 'center'
-            },
         };
     }
 

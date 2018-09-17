@@ -16,6 +16,14 @@ class CompanyListScreen extends Component {
         return {
             headerTitle: params.categoryName,
             headerRight: <MenuBar/>,
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                fontWeight: 'bold',
+                textAlign: 'center'
+            },
         };
     }
 

@@ -15,6 +15,14 @@ class HomeScreen extends React.Component {
         return {
             headerTitle: "Home",
             headerRight: <MenuBar/>,
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                fontWeight: 'bold',
+                textAlign: 'center',
+            },
         };
     }
 

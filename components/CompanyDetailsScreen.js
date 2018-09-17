@@ -10,6 +10,14 @@ class CompanyDetailsScreen extends Component {
         return {
             headerTitle: company.name.toUpperCase(),
             headerRight: <MenuBar/>,
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                fontWeight: 'bold',
+                textAlign: 'center'
+            },
         };
     }
 

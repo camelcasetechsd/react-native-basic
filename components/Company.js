@@ -1,24 +1,27 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import {Text, Image, TouchableOpacity, StyleSheet} from 'react-native'
 
 class Company extends Component {
 
-   GoToDetails = () => {
-      this.props.navigation.navigate('CompanyDetails',{ company: this.props.company})
-   }
+    GoToDetails = () => {
+        this.props.navigation.navigate('CompanyDetails', {
+                company: this.props.company
+            }
+        )
+    }
 
-   render() {
-      return (
-          <TouchableOpacity style={cstyles.card} onPress={() => this.GoToDetails({})}>
-    			   <Image source={this.props.uri}
-    			     style={cstyles.image}
-    			   />
-             <Text style={cstyles.text} >
-                {this.props.name}
-             </Text>
-          </TouchableOpacity>
-      )
-   }
+    render() {
+        return (
+            <TouchableOpacity style={cstyles.card} onPress={() => this.GoToDetails({})}>
+                <Image source={this.props.uri}
+                       style={cstyles.image}
+                />
+                <Text style={cstyles.text}>
+                    {this.props.name}
+                </Text>
+            </TouchableOpacity>
+        )
+    }
 }
 
 export default Company

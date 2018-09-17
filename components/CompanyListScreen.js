@@ -1,12 +1,22 @@
 import React, {Component} from 'react'
 import {View, StyleSheet, ScrollView} from 'react-native'
 import Company from './Company.js'
-import CompaniesData from './json/companies.json' ;
+import CompaniesData from './json/companies.json'
+import MenuBar from './MenuBar.js'
 
 
 class CompanyListScreen extends Component {
     state = {
         names: CompaniesData
+    }
+
+    static navigationOptions = ({navigation}) => {
+        const params = navigation.state.params || {};
+
+        return {
+            headerTitle: params.categoryName,
+            headerRight: <MenuBar/>,
+        };
     }
 
     companyGrouping(companies, categoryId) {

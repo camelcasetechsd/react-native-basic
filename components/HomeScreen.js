@@ -3,11 +3,11 @@ import {View, ScrollView, Image, Button} from 'react-native'
 import {createStackNavigator} from 'react-navigation';
 
 import CategoryList from './CategoryList.js'
-import CompanyList from './CompanyList.js'
-import CompanyDetails from './CompanyDetails.js'
+import CompanyListScreen from './CompanyListScreen.js'
+import CompanyDetailsScreen from './CompanyDetailsScreen.js'
 import MenuBar from './MenuBar.js'
 
-class Home extends React.Component {
+class HomeScreen extends React.Component {
 
     static navigationOptions = ({navigation}) => {
         const params = navigation.state.params || {};
@@ -32,4 +32,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home
+export default HomeScreen

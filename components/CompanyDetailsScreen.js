@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, ScrollView} from 'react-native'
 import ImageSlider from 'react-native-image-slider';
 
-class CompanyDetails extends Component {
+class CompanyDetailsScreen extends Component {
 
    state = {
       name: 'Example Company',
@@ -34,7 +34,7 @@ class CompanyDetails extends Component {
    }
 }
 
-export default CompanyDetails
+export default CompanyDetailsScreen
 
 const styles = StyleSheet.create ({
    container: {

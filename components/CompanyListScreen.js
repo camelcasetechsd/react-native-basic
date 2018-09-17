@@ -4,7 +4,7 @@ import Company from './Company.js'
 import CompaniesData from './json/companies.json' ;
 
 
-class CompanyList extends Component {
+class CompanyListScreen extends Component {
     state = {
         names: CompaniesData
     }
@@ -46,7 +46,7 @@ class CompanyList extends Component {
     }
 }
 
-export default CompanyList
+export default CompanyListScreen
 
 const cstyles = StyleSheet.create({
     container: {

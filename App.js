@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import { AppRegistry, View } from 'react-native';
+import { AppRegistry } from 'react-native';
 import {
   createStackNavigator,
 } from 'react-navigation';
 
-import Home from './components/Home.js'
-import CompanyList from './components/CompanyList.js'
-import CompanyDetails from './components/CompanyDetails.js'
+import HomeScreen from './components/HomeScreen.js'
+import CompanyListScreen from './components/CompanyListScreen.js'
+import CompanyDetailsScreen from './components/CompanyDetailsScreen.js'
 
 
 const RootStack = createStackNavigator(
   {
-    Main: Home,
-    CompanyList: CompanyList,
-    CompanyDetails: CompanyDetails,
+    Main: HomeScreen,
+    CompanyList: CompanyListScreen,
+    CompanyDetails: CompanyDetailsScreen,
   },
   {
     initialRouteName: 'Main',

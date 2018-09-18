@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {AppRegistry} from 'react-native';
 import {
-    createStackNavigator,
     createDrawerNavigator
 } from 'react-navigation';
 
@@ -10,15 +9,8 @@ import CompanyListScreen from './components/CompanyListScreen.js'
 import CompanyDetailsScreen from './components/CompanyDetailsScreen.js'
 import ContactUsScreen from './components/ContactUsScreen'
 import CustomDrawerContentComponent from './components/CustomDrawerContentComponent'
-import CategoryList from "./components/CategoryList";
 
-const RootStack = createStackNavigator(
-    {
-        Main: HomeScreen,
-        CompanyList: CompanyListScreen,
-        CompanyDetails: CompanyDetailsScreen,
-    }
-);
+
 
 const MyApp = createDrawerNavigator({
     Home: {
@@ -26,7 +18,13 @@ const MyApp = createDrawerNavigator({
     },
     Contactus: {
         screen: ContactUsScreen,
-    }
+    },
+    CompanyList: {
+        screen: CompanyListScreen
+    },
+    CompanyDetails: {
+        screen: CompanyDetailsScreen
+    },
 }, {
     initialRouteName: 'Home',
     contentComponent: CustomDrawerContentComponent,

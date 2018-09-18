@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {View, StyleSheet, ScrollView} from 'react-native'
 import Company from './Company.js'
 import CompaniesData from './json/companies.json'
+import {Icon, Button, Container, Content, Header, Left, Right} from 'native-base'
 
 class CompanyListScreen extends Component {
     state = {
@@ -34,21 +35,32 @@ class CompanyListScreen extends Component {
         const categoryId = navigation.getParam('categoryId', 'NO-ID');
         const companiesData = this.companyGrouping(this.state.names, categoryId);
         return (
-            <ScrollView>
-                <View style={cstyles.container}>
-                    {
-                    companiesData.map((item, index) => (
-                        <Company
-                            uri={{uri: item.image}}
-                            name={item.name}
-                            company={item}
-                            navigation={this.props.navigation}
-                            key={item.id}
+            <Container>
+                <Header style={{height: 75,}}>
+                    <Right>
+                        <Icon style={{marginTop: 25,}} name="ios-menu"
+                              onPress={() => this.props.navigation.navigate('DrawerOpen')}
                         />
-                    ))
-                    }
-                </View>
-            </ScrollView>
+                    </Right>
+                </Header>
+                <Content>
+                    <ScrollView>
+                        <View style={cstyles.container}>
+                            {
+                                companiesData.map((item, index) => (
+                                    <Company
+                                        uri={{uri: item.image}}
+                                        name={item.name}
+                                        company={item}
+                                        navigation={this.props.navigation}
+                                        key={item.id}
+                                    />
+                                ))
+                            }
+                        </View>
+                    </ScrollView>
+                </Content>
+            </Container>
         )
     }
 }

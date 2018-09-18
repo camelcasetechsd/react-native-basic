@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Text, StyleSheet, ScrollView} from 'react-native'
 import ImageSlider from 'react-native-image-slider'
+import {Icon, Button, Container, Content, Header, Left, Right} from 'native-base'
 
 class CompanyDetailsScreen extends Component {
 
@@ -26,17 +27,28 @@ class CompanyDetailsScreen extends Component {
         const {navigation} = this.props;
         const company = navigation.getParam('company', 'NO-COMPANY');
         return (
-            <ScrollView style={styles.container}>
-                <ImageSlider style={styles.imageslider} images={this.state.images}/>
-                <ScrollView>
-                    <Text style={{color: 'green', textAlign: 'center', fontSize: 24, marginTop: 10}}>
-                        {company.name.toUpperCase()}
-                    </Text>
-                    <Text style={styles.text}>
-                        {company.description}
-                    </Text>
-                </ScrollView>
-            </ScrollView>
+            <Container>
+                <Header style={{height: 75,}}>
+                    <Right>
+                        <Icon style={{marginTop: 25,}} name="ios-menu"
+                              onPress={() => this.props.navigation.navigate('DrawerOpen')}
+                        />
+                    </Right>
+                </Header>
+                <Content>
+                    <ScrollView style={styles.container}>
+                        <ImageSlider style={styles.imageslider} images={this.state.images}/>
+                        <ScrollView>
+                            <Text style={{color: 'green', textAlign: 'center', fontSize: 24, marginTop: 10}}>
+                                {company.name.toUpperCase()}
+                            </Text>
+                            <Text style={styles.text}>
+                                {company.description}
+                            </Text>
+                        </ScrollView>
+                    </ScrollView>
+                </Content>
+            </Container>
         )
     }
 }

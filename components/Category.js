@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {Text, View, Image, TouchableOpacity, StyleSheet} from 'react-native'
-import {createStackNavigator} from 'react-navigation';
 
 class Category extends Component {
 

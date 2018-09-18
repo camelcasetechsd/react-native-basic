@@ -3,6 +3,7 @@ import {View, StyleSheet, ScrollView} from 'react-native'
 import Company from './Company.js'
 import CompaniesData from './json/companies.json'
 import {Icon, Button, Container, Content, Header, Left, Right} from 'native-base'
+import HeaderComponent from './HeaderComponent'
 
 class CompanyListScreen extends Component {
     state = {
@@ -36,13 +37,7 @@ class CompanyListScreen extends Component {
         const companiesData = this.companyGrouping(this.state.names, categoryId);
         return (
             <Container>
-                <Header style={{height: 75,}}>
-                    <Right>
-                        <Icon style={{marginTop: 25,}} name="ios-menu"
-                              onPress={() => this.props.navigation.navigate('DrawerOpen')}
-                        />
-                    </Right>
-                </Header>
+                <HeaderComponent navigation={this.props.navigation}/>
                 <Content>
                     <ScrollView>
                         <View style={cstyles.container}>

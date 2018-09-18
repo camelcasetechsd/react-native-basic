@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Text, StyleSheet, ScrollView} from 'react-native'
 import ImageSlider from 'react-native-image-slider'
 import {Icon, Button, Container, Content, Header, Left, Right} from 'native-base'
+import HeaderComponent from './HeaderComponent'
 
 class CompanyDetailsScreen extends Component {
 
@@ -28,13 +29,7 @@ class CompanyDetailsScreen extends Component {
         const company = navigation.getParam('company', 'NO-COMPANY');
         return (
             <Container>
-                <Header style={{height: 75,}}>
-                    <Right>
-                        <Icon style={{marginTop: 25,}} name="ios-menu"
-                              onPress={() => this.props.navigation.navigate('DrawerOpen')}
-                        />
-                    </Right>
-                </Header>
+                <HeaderComponent navigation={this.props.navigation}/>
                 <Content>
                     <ScrollView style={styles.container}>
                         <ImageSlider style={styles.imageslider} images={this.state.images}/>

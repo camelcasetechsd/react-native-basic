@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import {View, ScrollView, Image, Text} from 'react-native'
-import {Icon, Button, Container, Content, Header, Left, Right} from 'native-base'
+import {ScrollView, Image} from 'react-native'
+import {Container, Content} from 'native-base'
 import CategoryList from './CategoryList.js'
 import HeaderComponent from './HeaderComponent'
 

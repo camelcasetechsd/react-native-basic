@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {View, StyleSheet, ScrollView} from 'react-native'
 import Company from './Company.js'
 import CompaniesData from './json/companies.json'
-import {Icon, Button, Container, Content, Header, Left, Right} from 'native-base'
+import {Container, Content} from 'native-base'
 import HeaderComponent from './HeaderComponent'
 
 class CompanyListScreen extends Component {

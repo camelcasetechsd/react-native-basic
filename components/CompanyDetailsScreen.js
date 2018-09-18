@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Text, StyleSheet, ScrollView} from 'react-native'
 import ImageSlider from 'react-native-image-slider'
-import {Icon, Button, Container, Content, Header, Left, Right} from 'native-base'
+import {Container, Content} from 'native-base'
 import HeaderComponent from './HeaderComponent'
 
 class CompanyDetailsScreen extends Component {

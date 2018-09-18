@@ -11,7 +11,6 @@ import ContactUsScreen from './components/ContactUsScreen'
 import CustomDrawerContentComponent from './components/CustomDrawerContentComponent'
 
 
-
 const MyApp = createDrawerNavigator({
     Home: {
         screen: HomeScreen,

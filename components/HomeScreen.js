@@ -9,7 +9,7 @@ class HomeScreen extends React.Component {
     render() {
         return (
             <Container>
-                <HeaderComponent navigation={this.props.navigation}/>
+                <HeaderComponent HeaderTitle='Home' navigation={this.props.navigation}/>
                 <Content contentContainerStyle={{
                     flex: 1,
                     alignItems: 'center',

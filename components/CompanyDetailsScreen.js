@@ -29,7 +29,7 @@ class CompanyDetailsScreen extends Component {
         const company = navigation.getParam('company', 'NO-COMPANY');
         return (
             <Container>
-                <HeaderComponent navigation={this.props.navigation}/>
+                <HeaderComponent title={company.name.toUpperCase()} navigation={this.props.navigation}/>
                 <Content>
                     <ScrollView style={styles.container}>
                         <ImageSlider style={styles.imageslider} images={this.state.images}/>

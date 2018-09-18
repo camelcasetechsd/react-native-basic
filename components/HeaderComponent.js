@@ -1,15 +1,16 @@
 import React, {Component} from 'react'
-import {StyleSheet} from 'react-native'
-import {Icon, Header, Right} from 'native-base'
+import {Container, Header, Left, Body, Right, Button, Icon, Title} from 'native-base';
 import {DrawerActions} from "react-navigation";
 
-class HeaderComponent extends React.Component {
+class HeaderComponent extends Component {
+
     render() {
+        const {navigation} = this.props;
+        const HeaderTitle = this.props.HeaderTitle;
         return (
-            <Header style={{height: 75,}}>
-                <Right style={{marginTop: 25, marginRight: 10}}>
-                    <Icon name="ios-menu"
-                          onPress={() => this.props.navigation.dispatch(DrawerActions.openDrawer())}
+            <Header style={{height: 75}}>
+                <Right>
+                    <Icon style={{marginTop:25}} name="ios-menu" onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
                     />
                 </Right>
             </Header>

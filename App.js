@@ -10,7 +10,6 @@ import CompanyDetailsScreen from './components/CompanyDetailsScreen.js'
 import ContactUsScreen from './components/ContactUsScreen'
 import CustomDrawerContentComponent from './components/CustomDrawerContentComponent'
 
-
 const MyApp = createDrawerNavigator({
     Home: {
         screen: HomeScreen,
@@ -41,6 +40,7 @@ const MyApp = createDrawerNavigator({
 
 class reactTutorialApp extends Component {
     render() {
+
         return (
             <MyApp/>
         );

@@ -1,19 +1,11 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import {View, ScrollView, Image} from 'react-native'
 import {Icon, Button, Container, Content, Header, Left, Right} from 'native-base'
-import CategoryList from './CategoryList.js'
 
-class HomeScreen extends React.Component {
-
+class ContactUsScreen extends React.Component {
     render() {
         return (
             <Container>
-                <Header>
-                    <Right>
-                        <Icon name="ios-menu" onPress={() => this.props.navigation.navigate('DrawerOpen')}
-                        />
-                    </Right>
-                </Header>
                 <Content contentContainerStyle={{
                     flex: 1,
                     alignItems: 'center',
@@ -23,7 +15,7 @@ class HomeScreen extends React.Component {
                         <Image source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
                                style={{width: '100%', height: 200}}
                         />
-                        <CategoryList navigation={this.props.navigation}/>
+                        <Text>Contact Us</Text>
                     </ScrollView>
                 </Content>
             </Container>
@@ -31,4 +23,4 @@ class HomeScreen extends React.Component {
     }
 }
 
-export default HomeScreen
+export default ContactUsScreen

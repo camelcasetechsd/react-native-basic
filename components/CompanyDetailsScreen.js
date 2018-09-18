@@ -7,7 +7,7 @@ class CompanyDetailsScreen extends Component {
     static navigationOptions = ({navigation}) => {
         const company = navigation.getParam('company', 'NO-COMPANY');
         return {
-            headerTitle: company.name.toUpperCase(),
+            headerTitle: JSON.stringify(company.name),
         };
     }
 

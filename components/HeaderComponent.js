@@ -10,9 +10,14 @@ class HeaderComponent extends Component {
         return (
             <Header style={{height: 75}}>
                 <Right>
-                    <Icon style={{marginTop:25}} name="ios-menu" onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+                    <Icon style={{marginTop: 25}} name="ios-menu"
+                          onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
                     />
                 </Right>
+                <Body>
+                    <Title>{HeaderTitle}</Title>
+                </Body>
+                <Left/>
             </Header>
         )
     }

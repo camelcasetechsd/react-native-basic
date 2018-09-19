@@ -1,30 +1,31 @@
-import React, {Component} from 'react'
-import {ScrollView, Image} from 'react-native'
-import {Container, Content} from 'native-base'
+import React, { Component } from 'react'
+import { ScrollView, Image, Text, View, StyleSheet } from 'react-native'
 import CategoryList from './CategoryList.js'
-import HeaderComponent from './HeaderComponent'
+import MenuBar from './MenuBar'
+import { red } from 'ansi-colors';
 
 class HomeScreen extends React.Component {
 
+    static navigationOptions = ({ navigation }) => {
+        const params = navigation.state.params || {};
+    }
     render() {
         return (
-            <Container>
-                <HeaderComponent HeaderTitle='Home' navigation={this.props.navigation}/>
-                <Content contentContainerStyle={{
-                    flex: 1,
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                }}>
-                    <ScrollView>
-                        <Image source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
-                               style={{width: '100%', height: 200}}
-                        />
-                        <CategoryList navigation={this.props.navigation}/>
-                    </ScrollView>
-                </Content>
-            </Container>
+            <ScrollView>
+                <Image source={{ uri: 'https://facebook.github.io/react/logo-og.png' }}
+                    style={{ width: '100%', height: 200 }}
+                />
+                <CategoryList navigation={this.props.navigation} />
+            </ScrollView>
         );
     }
 }
 
 export default HomeScreen
+
+const styles = StyleSheet.create({
+    header: {
+        height: 80,
+        backgroundColor: 'red',
+    },
+});

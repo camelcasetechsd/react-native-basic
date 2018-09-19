@@ -1,15 +1,15 @@
-import React, {Component} from 'react'
-import {Text, StyleSheet, ScrollView} from 'react-native'
+import React, { Component } from 'react'
+import { Text, StyleSheet, ScrollView } from 'react-native'
 import ImageSlider from 'react-native-image-slider'
-import {Container, Content} from 'native-base'
+import { Container, Content } from 'native-base'
 import HeaderComponent from './HeaderComponent'
 
 class CompanyDetailsScreen extends Component {
 
-    static navigationOptions = ({navigation}) => {
+    static navigationOptions = ({ navigation }) => {
         const company = navigation.getParam('company', 'NO-COMPANY');
         return {
-            headerTitle: JSON.stringify(company.name),
+            headerTitle: company.name,
         };
     }
 
@@ -25,25 +25,22 @@ class CompanyDetailsScreen extends Component {
     }
 
     render() {
-        const {navigation} = this.props;
+        const { navigation } = this.props;
         const company = navigation.getParam('company', 'NO-COMPANY');
         return (
-            <Container>
-                <HeaderComponent title={company.name.toUpperCase()} navigation={this.props.navigation}/>
-                <Content>
-                    <ScrollView style={styles.container}>
-                        <ImageSlider style={styles.imageslider} images={this.state.images}/>
-                        <ScrollView>
-                            <Text style={{color: 'green', textAlign: 'center', fontSize: 24, marginTop: 10}}>
-                                {company.name.toUpperCase()}
-                            </Text>
-                            <Text style={styles.text}>
-                                {company.description}
-                            </Text>
-                        </ScrollView>
+            <ScrollView>
+                <ScrollView style={styles.container}>
+                    <ImageSlider style={styles.imageslider} images={this.state.images} />
+                    <ScrollView>
+                        <Text style={{ color: 'green', textAlign: 'center', fontSize: 24, marginTop: 10 }}>
+                            {company.name.toUpperCase()}
+                        </Text>
+                        <Text style={styles.text}>
+                            {company.description}
+                        </Text>
                     </ScrollView>
-                </Content>
-            </Container>
+                </ScrollView>
+            </ScrollView>
         )
     }
 }

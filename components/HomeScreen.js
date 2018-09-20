@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { ScrollView, Image, Text, View, StyleSheet } from 'react-native'
 import CategoryList from './CategoryList.js'
 import HumburgerIcon from "./HumburgerIcon"
-import {Overlay} from 'react-native-elements'
+
 class HomeScreen extends React.Component {
 
     static navigationOptions = ({ navigation }) => {
@@ -12,6 +12,7 @@ class HomeScreen extends React.Component {
             headerLeft: <HumburgerIcon navigation={navigation} />
         }
     }
+
     render() {
         return (
             <ScrollView>

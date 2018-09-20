@@ -3,6 +3,7 @@ import { View, StyleSheet, ScrollView } from 'react-native'
 import Company from './Company.js'
 import CompaniesData from './json/companies.json'
 import HumburgerIcon from './HumburgerIcon'
+import {createStackNavigator} from 'react-navigation'
 
 class CompanyListScreen extends Component {
     state = {

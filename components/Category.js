@@ -1,20 +1,19 @@
-import React, {Component} from 'react'
-import {Text, View, Image, TouchableOpacity, StyleSheet} from 'react-native'
+import React, { Component } from 'react'
+import { Text, View, Image, TouchableOpacity, StyleSheet } from 'react-native'
 
 class Category extends Component {
 
-    GoToCompanyList = () => {
-        this.props.navigation.navigate('CompanyList', {
-                categoryId: this.props.category.id,
-                categoryName: this.props.category.name,
-            }
-        )
-    }
-
     render() {
+        const navigation = this.props;
         return (
-            <TouchableOpacity key={this.props.category.id} style={styles.card} onPress={() => this.GoToCompanyList({})}>
-                <Image source={this.props.uri} style={styles.image}/>
+            <TouchableOpacity key={this.props.category.id} style={styles.card}
+                onPress={() => {this.props.showOverlay({
+                    showOverlayState: true,
+                    categoryId: this.props.category.id,
+                    categoryName: this.props.category.name,
+                })}}
+                >
+                <Image source={this.props.uri} style={styles.image} />
                 <Text style={styles.text}>
                     {this.props.category.name}
                 </Text>

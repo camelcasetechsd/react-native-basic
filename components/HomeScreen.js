@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { ScrollView, Image, Text, View, StyleSheet } from 'react-native'
 import CategoryList from './CategoryList.js'
 import HumburgerIcon from "./HumburgerIcon";
-import { red } from 'ansi-colors';
 
 class HomeScreen extends React.Component {
 
@@ -26,10 +25,3 @@ class HomeScreen extends React.Component {
 }
 
 export default HomeScreen
-
-const styles = StyleSheet.create({
-    header: {
-        height: 80,
-        backgroundColor: 'red',
-    },
-});

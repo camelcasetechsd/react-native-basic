@@ -28,20 +28,17 @@ export default Company
 
 const cstyles = StyleSheet.create({
     text: {
-        width: 100,
         color: '#4f603c',
         textAlign: 'center',
-        flex: 1,
-        flexWrap: 'wrap',
     },
     image: {
-        width: 100,
-        height: 100
+        width: 140,
+        height: 140
     },
     card: {
-        padding: 5,
-        marginTop: 5,
-        marginRight: 7,
-        backgroundColor: '#d9f9b1',
+        width: 145,
+        height: 160,
+        marginTop: 10,
     },
 })
+

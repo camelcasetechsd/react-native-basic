@@ -60,8 +60,12 @@ export default CompanyListScreen
 
 const cstyles = StyleSheet.create({
     container: {
+        padding: 20,
+        marginTop: 3,
+        backgroundColor: '#d9f9b1',
         flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
         flexWrap: 'wrap',
-        justifyContent: 'center',
-    },
+     },
 })

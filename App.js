@@ -12,14 +12,22 @@ import ContactUsScreen from './components/ContactUsScreen'
 import CustomDrawerContentComponent from './components/CustomDrawerContentComponent'
 import MenuBar from './components/MenuBar'
 
+/* General Stack header Setting */
+const headerSetting = {
+    navigationOptions: {
+        headerStyle: {
+            backgroundColor: '#f4511e',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+        },
+    },
+}
 
-
-const MainNavigator = createStackNavigator({
+const HomeStackNavigator = createStackNavigator({
     Home: {
         screen: HomeScreen,
-        navigationOptions:{
-            headerTitle: 'Home'
-        }
     },
     CompanyList: {
         screen: CompanyListScreen
@@ -27,19 +35,23 @@ const MainNavigator = createStackNavigator({
     CompanyDetails: {
         screen: CompanyDetailsScreen
     },
-    Contactus: {
-        screen: ContactUsScreen,
-    },
-});
+},
+    headerSetting
+);
+
+const ContactUsStackNavigator = createStackNavigator({
+    Contactus: { screen: ContactUsScreen, }
+},
+    headerSetting
+);
 
 
-const MenuNavigator = createDrawerNavigator({
+const DrawerNavigator = createDrawerNavigator({
     Home: {
-        screen: MainNavigator,
+        screen: HomeStackNavigator,
     },
     Contactus: {
-        screen: ContactUsScreen,
-
+        screen: ContactUsStackNavigator,
     },
 }, {
         initialRouteName: 'Home',
@@ -60,7 +72,7 @@ const MenuNavigator = createDrawerNavigator({
 class reactTutorialApp extends Component {
     render() {
         return (
-            <MenuNavigator />
+            <DrawerNavigator />
         );
     }
 }

@@ -1,7 +1,5 @@
 import React from 'react'
 import { View, Image, Text } from 'react-native'
-import { Container, Content } from 'native-base'
-import HeaderComponent from './HeaderComponent'
 import { ScrollView } from 'react-native-gesture-handler';
 import HumburgerIcon from "./HumburgerIcon";
 

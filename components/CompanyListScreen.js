@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { View, StyleSheet, ScrollView } from 'react-native'
 import Company from './Company.js'
 import CompaniesData from './json/companies.json'
-import { Container, Content } from 'native-base'
 import HumburgerIcon from './HumburgerIcon'
 
 class CompanyListScreen extends Component {

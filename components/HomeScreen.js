@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import { ScrollView, Image, Text, View, StyleSheet } from 'react-native'
 import CategoryList from './CategoryList.js'
-import HumburgerIcon from "./HumburgerIcon";
-
+import HumburgerIcon from "./HumburgerIcon"
+import {Overlay} from 'react-native-elements'
 class HomeScreen extends React.Component {
 
     static navigationOptions = ({ navigation }) => {
         const params = navigation.state.params || {};
         return {
             headerTitle: 'Home'.toUpperCase(),
-            headerLeft: <HumburgerIcon navigation={navigation}/>
+            headerLeft: <HumburgerIcon navigation={navigation} />
         }
     }
     render() {

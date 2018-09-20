@@ -2,14 +2,15 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, ScrollView } from 'react-native'
 import ImageSlider from 'react-native-image-slider'
 import { Container, Content } from 'native-base'
-import HeaderComponent from './HeaderComponent'
+import HumburgerIcon from './HumburgerIcon'
 
 class CompanyDetailsScreen extends Component {
 
     static navigationOptions = ({ navigation }) => {
         const company = navigation.getParam('company', 'NO-COMPANY');
         return {
-            headerTitle: company.name,
+            headerTitle: company.name.toUpperCase(),
+            headerLeft: <HumburgerIcon navigation={navigation}/>
         };
     }
 

@@ -3,14 +3,15 @@ import { View, Image, Text } from 'react-native'
 import { Container, Content } from 'native-base'
 import HeaderComponent from './HeaderComponent'
 import { ScrollView } from 'react-native-gesture-handler';
-import MenuBar from './MenuBar';
+import HumburgerIcon from "./HumburgerIcon";
 
 class ContactUsScreen extends React.Component {
 
     static navigationOptions = ({ navigation }) => {
         return {
             headerTitle: "Contact Us",
-            headerLeft: null,
+            headerRight: null,
+            headerLeft: <HumburgerIcon navigation={navigation}/>,
         };
     }
     render() {

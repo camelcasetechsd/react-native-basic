@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import { ScrollView, Image, Text, View, StyleSheet } from 'react-native'
 import CategoryList from './CategoryList.js'
-import MenuBar from './MenuBar'
+import HumburgerIcon from "./HumburgerIcon";
 import { red } from 'ansi-colors';
 
 class HomeScreen extends React.Component {
 
     static navigationOptions = ({ navigation }) => {
         const params = navigation.state.params || {};
+        return {
+            headerTitle: 'Home'.toUpperCase(),
+            headerLeft: <HumburgerIcon navigation={navigation}/>
+        }
     }
     render() {
         return (

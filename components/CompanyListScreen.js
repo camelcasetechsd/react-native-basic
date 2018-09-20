@@ -3,7 +3,7 @@ import { View, StyleSheet, ScrollView } from 'react-native'
 import Company from './Company.js'
 import CompaniesData from './json/companies.json'
 import { Container, Content } from 'native-base'
-import HeaderComponent from './HeaderComponent'
+import HumburgerIcon from './HumburgerIcon'
 
 class CompanyListScreen extends Component {
     state = {
@@ -14,7 +14,8 @@ class CompanyListScreen extends Component {
         const params = navigation.state.params || {};
 
         return {
-            headerTitle: params.categoryName,
+            headerTitle: params.categoryName.toUpperCase(),
+            headerLeft: <HumburgerIcon navigation={navigation}/>
         };
     }
 

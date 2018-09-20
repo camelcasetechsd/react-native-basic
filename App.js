@@ -10,7 +10,6 @@ import CompanyListScreen from './components/CompanyListScreen.js'
 import CompanyDetailsScreen from './components/CompanyDetailsScreen.js'
 import ContactUsScreen from './components/ContactUsScreen'
 import CustomDrawerContentComponent from './components/CustomDrawerContentComponent'
-import MenuBar from './components/MenuBar'
 
 /* General Stack header Setting */
 const headerSetting = {
@@ -22,6 +21,9 @@ const headerSetting = {
         headerTitleStyle: {
             fontWeight: 'bold',
         },
+        headerTitleContainerStyle:{
+            justifyContent: 'center',
+        }
     },
 }
 
@@ -52,22 +54,21 @@ const DrawerNavigator = createDrawerNavigator({
     },
     Contactus: {
         screen: ContactUsStackNavigator,
+        navigationOptions: {
+            drawerLabel: 'Contact Us'
+        }
     },
 }, {
         initialRouteName: 'Home',
         contentComponent: CustomDrawerContentComponent,
-        drawerPosition: 'right',
+        drawerPosition: 'left',
         contentOptions: {
             activeTintColor: '#e91e63',
-            itemsContainerStyle: {
-                marginVertical: 10,
-            },
             iconContainerStyle: {
                 opacity: .5
             }
         }
     })
-
 
 class reactTutorialApp extends Component {
     render() {

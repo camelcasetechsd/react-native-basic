@@ -2,32 +2,29 @@ import React, { Component } from 'react'
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native'
 import { DrawerActions } from "react-navigation";
 
-class MenuBar extends Component {
+class HumburgerIcon extends Component {
     render() {
         const { navigation } = this.props;
         return (
-            <Text style={style.View}
-                onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+            <TouchableOpacity
+                onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
             >
                 <Text style={style.text}></Text>
                 <Text style={style.text}></Text>
                 <Text style={style.text}></Text>
-            </Text>
+            </TouchableOpacity>
         );
     }
 }
 
-export default MenuBar
+export default HumburgerIcon
 
 const style = StyleSheet.create({
     text: {
-        width: 25,
+        width: 20,
         height: 3,
         backgroundColor: '#ffffff',
-        marginTop: 6,
-        marginRight: 8,
+        marginTop: 5,
+        marginLeft: 17,
     },
-    View: {
-        marginTop: 13
-    }
 })

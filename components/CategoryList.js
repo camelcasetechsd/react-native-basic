@@ -16,7 +16,7 @@ class CategoryList extends Component {
             selectedCategoryId: data.categoryId,
             selectedCategoryName: data.categoryName
         });
-        console.log(data)
+
     }
 
     render() {
